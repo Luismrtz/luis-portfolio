@@ -1,137 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-      crossorigin="anonymous"
-    />
 
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" /> -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="css/utilities.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Luis Martinez</title>
-  </head>
-  <body class="overflow">
-    <!-- navbar -->
-    
-    <div class="navbar">
-        <div class=" flex">
-            <a href="#" class="logo menuLink"><img src="images/white.png" alt="LM" class="nav-logo"></a>
-           
-            <nav class="navLinks">
-                <ul class="navvy">
-                    <li class="menuLink"><a href="#">Home</a></li>
-                    <li class="menuLink"><a href="#projects">Projects</a></li>
-                </ul>
-            </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/utilities.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Luis Martinez</title>
+</head>
 
-            <nav class="burger">
-                <ul>
-                    <li class="bars ">
-                        <a><i class="fa fa-bars fa-1x"></i></a>
-                    
-                    </li>
-                    <li class="times hide">
-                        <a><i class="fa fa-times fa-1x"></i></a>
-                    </li>
-                </ul>
-            </nav>
- 
-        </div>
+<body class="overflow">
+  <div class="navbar">
+    <div class="flex">
+      <a href="#" class="logo menuLink"><img src="images/white.png" alt="LM" class="nav-logo" /></a>
+      <nav class="navLinks">
+        <ul class="navvy">
+          <li class="menuLink"><a href="#">Home</a></li>
+          <li class="menuLink"><a href="#projects">Projects</a></li>
+        </ul>
+      </nav>
+      <nav class="burger">
+        <ul>
+          <li class="bars">
+            <a><i class="fa fa-bars fa-1x"></i></a>
+          </li>
+          <li class="times hide">
+            <a><i class="fa fa-times fa-1x"></i></a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <!-- cover -->
-    <section class="cover">
-        <div class=" flex">
-            <h1 class="xl">Luis Martinez</h1>
-            <h3 class="md">I'm a web developer currently based in Fort Myers, Florida. </h3> 
-            <h3 class="md">Seeking Front End developer opportunities</h3>
+  </div>
 
-            <div class="social">
+  <section class="cover">
+    <div class="flex">
+      <h1 class="xl">Luis Martinez</h1>
+      <h3 class="md">Software Engineer currently based in Utah.</h3>
+      <div class="social">
+        <a target="_blank" rel="noreferrer" href="https://github.com/Luismrtz"><svg class="icon">
+            <use xlink:href="images/sprite.svg#icon-github"></use>
+          </svg></a>
+        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/luis-martinez-307742bb/"><svg
+            class="icon">
+            <use xlink:href="images/sprite.svg#icon-linkedin"></use>
+          </svg></a>
+      </div>
+      <div class="arrow">
+        <a href="#projects"><svg class="icon">
+            <use xlink:href="images/sprite.svg#icon-circle-down"></use>
+          </svg></a>
+      </div>
+    </div>
+  </section>
 
-                    <a target="_blank" rel="noreferrer" href="https://github.com/Luismrtz"><svg class="icon">
-                        <use xlink:href="images/sprite.svg#icon-github"></use>
-                    </svg></a>
-                    <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/luis-martinez-307742bb/"><svg class="icon">
-                        <use xlink:href="images/sprite.svg#icon-linkedin"></use>
-                    </svg></a>
-   
-                <!-- </div> -->
-            </div>
-    
-            <div class="arrow">
-                <a href="#projects"><svg>
-                    <use xlink:href="images/sprite.svg#icon-circle-down"></use>
-                </svg></a>
-            </div>
+  <section id="projects" class="projects">
+    <h1 class="lg">Projects</h1>
+    <div class="projects-section">
+      <h2 class="md">New Projects</h2>
+      <div class="grid" id="new-projects"></div>
+    </div>
+    <div class="projects-section">
+      <h2 class="md">Old Projects</h2>
+      <div class="grid" id="old-projects"></div>
+    </div>
+  </section>
 
+  <footer class="footer sm">
+    <div>
+      Copyright &copy;
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+      Luis Martinez. All Rights Reserved.
+    </div>
+  </footer>
+  <script src="js/index.js"></script>
+</body>
 
-        </div>
-    </section>
-
-    <!-- projects -->
-
-    <section id="projects" class="projects">
-        <h2 class="lg">Projects</h1>
-        <div class="grid">
-            <div class="box">
-                <figure class="project-1"><img src="images/pinblog-portfolio.PNG" alt="Project 1" class="about__img"></figure>
-                <div class="flex">
-                    <a  class="btn" target="_blank" rel="noreferrer" href="https://my-interests-blogs.web.app/">Website</a>
-                    <a  class="btn" target="_blank" rel="noreferrer" href="https://github.com/Luismrtz/vue-interests-blog">Github</a>
-                </div>
-            </div>
-            <div class="box">
-                <figure class="project-1"><img src="images/mat-proj.PNG" alt="Project 2" class="about__img"></figure>
-                <div class="flex">
-                    <a  class="btn" target="_blank" rel="noreferrer" href="https://blissful-saha-fa1bb3.netlify.app/">Website</a>
-                    <a  class="btn" target="_blank" rel="noreferrer" href="https://github.com/Luismrtz/material-UI-proj-1">Github</a>
-                </div>
-            </div>
-            <div class="box">
-                <figure class="project-1"><img src="images/ExploreWebsite.PNG" alt="Project 1" class="about__img"></figure>
-                <div class="flex">
-                    <a  class="btn" target="_blank" rel="noreferrer" href="https://amazing-mccarthy-b2b1d8.netlify.app/">Website</a>
-                    <a  class="btn" target="_blank" rel="noreferrer" href="https://github.com/Luismrtz/Zenitram-TS">Github</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <figure class="project-1"><img src="images/lm-recipes.PNG" alt="Project 3" class="about__img"></figure>
-                <div class="flex">
-                    <a  class="btn" target="_blank" rel="noreferrer" href="https://www.lm-recipes.com/">Website</a>
-                    <a  class="btn" target="_blank" rel="noreferrer" href="https://github.com/Luismrtz/mamas-recipes">Github</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <figure class="project-1"><img src="images/symbols.PNG" alt="Project 4" class="about__img"></figure>
-                <div class="flex">
-                    <a  class="btn" target="_blank" rel="noreferrer" href="https://my-symbols-app.herokuapp.com/">Website</a>
-                    <a  class="btn" target="_blank" rel="noreferrer" href="https://github.com/Luismrtz/webstore">Github</a>
-                </div>
-            </div>
-            
-            <div class="box">
-                <figure class="project-1"><img src="images/auth.PNG" alt="Project 5" class="about__img"></figure>
-                <div class="flex">
-                    <a class="btn" target="_blank" rel="noreferrer" href="https://lm-auth-test.herokuapp.com/">Website</a>
-                    <a class="btn" target="_blank" rel="noreferrer" href="https://github.com/Luismrtz/auth-app">Github</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- footer  -->
-    <footer class="footer sm">
-        <div>
-         Copyright &copy; <script>document.write(new Date().getFullYear())</script> Luis Martinez. All Rights Reserved.
-        </div>
-    </footer>
-    <script src="js/index.js"></script>
-  </body>
 </html>
