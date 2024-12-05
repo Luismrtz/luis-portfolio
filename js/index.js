@@ -90,7 +90,7 @@ const isOld = (date) => {
 // Sort by date
 projects.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-// project date filter
+// date filter
 const newProjects = projects.filter((project) => !isOld(project.date));
 const oldProjects = projects.filter((project) => isOld(project.date));
 
