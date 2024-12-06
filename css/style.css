@@ -179,6 +179,10 @@ h3 {
   background-color: var(--grey);
 }
 
+.projects h1 {
+  color: var(--mainFont);
+}
+
 .projects h2 {
   padding: 4rem 0 4rem 0;
   color: var(--mainFont);
