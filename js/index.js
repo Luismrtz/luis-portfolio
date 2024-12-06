@@ -75,8 +75,8 @@ const projects = [
     title: "Mock Clinic",
     image: "images/mock-clinic-projects.PNG",
     website: "",
-    github: "https://github.com/Luismrtz/vue-interests-blog",
-    date: "12-01-2024",
+    github: "https://github.com/Luismrtz/mock-clinic",
+    date: "12-05-2024",
   },
 ];
 
