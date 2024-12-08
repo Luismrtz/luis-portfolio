@@ -34,56 +34,56 @@ const projects = [
     image: "images/pinblog-portfolio.PNG",
     website: "https://my-interests-blogs.web.app/",
     github: "https://github.com/Luismrtz/vue-interests-blog",
-    date: "08-24-2021",
+    date: "2021-08-24",
   },
   {
     title: "Material UI Proj",
     image: "images/mat-proj.PNG",
     website: "https://blissful-saha-fa1bb3.netlify.app/",
     github: "https://github.com/Luismrtz/material-UI-proj-1",
-    date: "05-30-2021",
+    date: "2021-05-30",
   },
   {
     title: "Explore TS",
     image: "images/ExploreWebsite.PNG",
     website: "https://amazing-mccarthy-b2b1d8.netlify.app/",
     github: "https://github.com/Luismrtz/Zenitram-TS",
-    date: "05-30-2021",
+    date: "2021-05-30",
   },
   {
     title: "Mamas Recipes",
     image: "images/lm-recipes.PNG",
     website: "",
     github: "https://github.com/Luismrtz/mamas-recipes",
-    date: "01-24-2021",
+    date: "2021-01-24",
   },
   {
     title: "Webstore",
     image: "images/symbols.PNG",
     website: "",
     github: "https://github.com/Luismrtz/webstore",
-    date: "04-20-2021",
+    date: "2021-04-20",
   },
   {
     title: "Auth app",
     image: "images/auth.PNG",
     website: "",
     github: "https://github.com/Luismrtz/auth-app",
-    date: "02-04-2021",
+    date: "2021-02-04",
   },
   {
     title: "Mock Clinic",
     image: "images/mock-clinic-projects.PNG",
     website: "",
     github: "https://github.com/Luismrtz/mock-clinic",
-    date: "12-05-2024",
+    date: "2024-12-05",
   },
 ];
 
 // Helpers
 const isOld = (date) => {
   const projectDate = new Date(date);
-  const dateLimit = new Date("01-01-2023");
+  const dateLimit = new Date("2023-01-01");
   return projectDate < dateLimit;
 };
 
@@ -102,6 +102,13 @@ function cardList(projects, id) {
 
     const hasWebsite = !!project.website;
 
+    // format date
+    const formateDate = new Date(project.date).toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+    });
+
     card.innerHTML = `
             <div class="image-wrapper">
               <img src="${project.image}" alt="${project.title}">
@@ -110,7 +117,7 @@ function cardList(projects, id) {
               <h3>${project.title}</h3>
               <div class="date sm">
                   <img src="images/svg/calendar.svg" alt="Calendar Icon" class="calendar-icon"> 
-                  ${project.date}
+                  ${formateDate}
               </div>
               <div class="button-row">
                 ${
