@@ -179,23 +179,17 @@ h3 {
   background-color: var(--grey);
 }
 
-.projects h1 {
-  color: var(--mainFont);
-}
-
-.projects h2 {
-  padding: 4rem 0 4rem 0;
-  color: var(--mainFont);
-}
-
 .projects-section h2 {
+  margin: 4rem 0 4rem 0;
+  color: var(--mainFont);
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .grid {
   display: grid;
   gap: 20px;
+  justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
 }
 
@@ -234,12 +228,14 @@ h3 {
 }
 
 .content h3 {
-  color: #555;
+  color: var(--primary-color);
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 40px;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
   text-align: left;
-  font-size: 20px;
+  font-weight: bold;
+  /* font-size: 20px; */
 }
 
 .card .date {
@@ -291,19 +287,18 @@ h3 {
   .xl {
     font-size: 4.7rem;
   }
+  .lg {
+    font-size: 3rem;
+  }
   .md {
     font-size: 1.4rem;
   }
   .sm {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
   .social .icon {
     height: 2.2rem;
     width: 4rem;
-  }
-
-  .grid {
-    justify-content: center;
   }
 
   .projects-section h2 {
@@ -366,5 +361,8 @@ h3 {
   .social .icon {
     height: 2rem;
     width: 3.5rem;
+  }
+  .footer {
+    font-size: 1.1rem;
   }
 }
